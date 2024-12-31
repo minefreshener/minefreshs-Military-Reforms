@@ -1,6 +1,720 @@
 [
 	{
-		"name": "Mace",
-		"uniques": []
+		"name": "Dagger"
+	},
+	{
+		"name": "Wardog",
+		"uniques": ["[+15]% Strength <when attacking>"]
+	},
+	{
+		"name": "Scouting Expertise",
+		"uniques": ["Ignores terrain cost"]
+	},
+	{
+	"name": "Mace",
+	"uniques": ["[+15]% Strength <when attacking>"]
+	},
+	{
+		"name": "Sword"
+	},
+	{
+	"name": "Axe",
+	"uniques": ["[+15]% Strength <when attacking>"]
+	},
+	{
+		"name": "Bow"
+	},
+	{
+		"name": "Sling"
+	},
+	{
+	"name": "Javelin",
+	"uniques": ["[+15]% Strength <when attacking>"]
+	},
+	{
+	"name": "Shield",
+	"uniques": ["[+15]% Strength <when defending>"]
+	},
+	{
+		"name": "Ram"
+	},
+	{
+	"name": "Corvus",
+	"uniques": ["[+25]% Strength <when attacking>"]
+	},
+	{
+	"name": "Ship Ballista",
+	"uniques": ["[+33]% Strength <vs cities> <when attacking>"]
+	},
+	{
+	"name": "Chariot",
+	"uniques": ["Rough terrain penalty","Can move after attacking"]
+	},
+	{
+	"name": "Horse",
+	"uniques": ["Can move after attacking"]
+	},
+	{
+	"name": "Elephant",
+	"uniques": ["Can move after attacking", "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
+		"[+15]% Strength <when attacking>", "[-15]% Strength <when defending>"]
+	},
+	{
+	"name": "Spear",
+	"uniques": ["[+33]% Strength <vs [Mounted] units>"]
+	},
+	{
+	"name": "Pike",
+	"uniques": ["[+75]% Strength <vs [Mounted] units>"]
+	},
+	{
+	"name": "Lance",
+	"uniques": ["[+15]% Strength <vs [Sword] units>"]
+	},
+	{
+	"name": "Heavy Armor",
+	"uniques": ["[+15]% Strength <when defending>"]
+	},
+	{
+	"name": "Catapult"
+	},
+	{
+	"name": "Ballista"
+	},
+	{
+	"name": "Ship Cannon"
+	},
+	{
+	"name": "Sabre"
+	},
+	{
+	"name": "Camel",
+	"uniques": ["Can move after attacking", "[-15]% Strength for enemy [Mounted] units in adjacent [All] tiles"]
+	},
+	{
+	"name": "Crossbow",
+	"uniques": ["[+15]% Strength <when attacking>"]
+	},
+	{
+	"name": "Rocket",
+	"uniques": ["[+15]% Strength <when attacking>"]
+	},
+	{
+	"name": "Musket",
+	"uniques": ["[+15]% Strength <when attacking>", "[-15]% Strength <when defending>"]
+	},
+	{
+	"name": "Cannon",
+	"uniques": ["[+15]% Strength <when attacking>", "[-15]% Strength <when defending>"]
+	},
+	{
+	"name": "Heavy Machine Gun",
+	"uniques": ["[+15]% Strength <when attacking>", "[-15]% Strength <when defending>"]
+	},
+	{
+	"name": "Rifle"
+	},
+	{
+	"name": "Pistol"
+	},
+	{
+	"name": "Modern Cannon"
+	},
+	{
+	"name": "Submersible",
+	"uniques": ["Can only attack [Water] tiles"]
+	},
+	{
+	"name": "E-Tool",
+	"uniques": ["Can build [Road] improvements on tiles", "Can build [Fort] improvements on tiles"]
+	},
+	{
+	"name": "Light Machine Gun"
+	},
+	{
+	"name": "Airplane"
+	},
+	{
+	"name": "Automatic Rifle"
+	},
+	{
+	"name": "Assasination",
+	"prerequisites": ["Dagger"],
+	"uniques": ["[+100]% Strength <when attacking>","[-50]% Strength <when defending>"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored"]
+	},
+	{
+	"name": "Loose Formation",
+	"prerequisites": ["Bow","Sling","Rifle"],
+	"uniques": ["[-33]% Strength <vs [Mounted] units> <when defending>","[+50]% Strength <vs [Ranged] units> <when defending>",
+		"[+33]% Strength <vs [Armored] units> <when defending>"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Scout","Ranged Gunpowder"]
+	},
+	{
+	"name": "Shield Wall",
+	"prerequisites": ["Shield"],
+	"uniques": ["[+50]% Strength <when defending>","[+15]% Strength <vs [Mounted] units> <when defending>",
+		"[+10]% Strength <vs [Ranged] units> <when defending>","[-33]% Strength <vs [Armored] units> <when defending>"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Scout"]
+	},
+	{
+	"name": "Schiltrom",
+	"prerequisites": ["Spear"],
+	"uniques": ["[+25]% Strength <when defending>","[+33]% Strength <vs [Mounted] units> <when defending>",
+		"[-15]% Strength <vs [Armored] units> <when defending>"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Scout"]
+	},
+	{
+	"name": "High Explosive Rounds",
+	"prerequisites": ["Modern Cannon"],
+	"uniques": ["[+50]% Strength <vs [Armored] units> <when attacking>","[+100]% Strength <vs [Water] units> <when attacking>"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Scout","Ranged Gunpowder","Siege"]
+	},
+	{
+	"name": "Breech Loader",
+	"prerequisites": ["Modern Cannon"],
+	"uniques": ["[1] additional attacks per turn"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Scout","Ranged Gunpowder","Siege"]
+	},
+	{
+	"name": "Horse Drawn",
+	"prerequisites": ["Cannon","Heavy Machine Gun","Modern Cannon"],
+	"uniques": ["Consumes [1] [Horses]","[+2] Movement"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Scout","Siege","Ranged Gunpowder"]
+	},
+	{
+	"name": "Phalanx I",
+	"prerequisites": ["Pike"],
+	"uniques": ["[+25]% Strength <vs [Mounted] units> <when defending>",
+		"[+25]% Strength <vs [Mounted] units>"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Scout"]
+	},
+	{
+	"name": "Phalanx II",
+	"prerequisites": ["Phalanx I"],
+	"uniques": ["[+25]% Strength <vs [Mounted] units> <when defending>",
+		"[+25]% Strength <vs [Mounted] units>"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Scout"]
+	},
+	{
+	"name": "Phalanx III",
+	"prerequisites": ["Phalanx II"],
+	"uniques": ["[+25]% Strength <vs [Mounted] units> <when defending>",
+		"[+25]% Strength <vs [Mounted] units>"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Scout"]
+	},
+	{
+	"name": "Fire By Rank I",
+	"prerequisites": ["Musket","Rifle"],
+	"uniques": ["[+10]% Strength <when attacking>"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Ranged Gunpowder","Scout","Siege","Melee Water","Ranged Water"]
+	},
+	{
+	"name": "Fire By Rank II",
+	"prerequisites": ["Fire By Rank I"],
+	"uniques": ["[+10]% Strength <when attacking>"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Ranged Gunpowder","Scout","Siege","Melee Water","Ranged Water"]
+	},
+	{
+	"name": "Fire By Rank III",
+	"prerequisites": ["Fire BY Rank II"],
+	"uniques": ["[+10]% Strength <when attacking>"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Ranged Gunpowder","Scout","Siege","Melee Water","Ranged Water"]
+	},
+	{
+	"name": "Extended Magazine I",
+	"prerequisites": ["Heavy Machine Gun"],
+	"uniques": ["[1] additional attacks per turn"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Ranged Gunpowder","Scout","Siege","Melee Water","Ranged Water","Fighter","Bomber"]
+	},
+	{
+	"name": "Extended Magazine II",
+	"prerequisites": ["Extended Magazine I"],
+	"uniques": ["[1] additional attacks per turn","Light Machine Gun"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Ranged Gunpowder","Scout","Siege","Melee Water","Ranged Water","Fighter","Bomber"]
+	},
+	{
+	"name": "Extended Magazine III",
+	"prerequisites": ["Extended Magazine II","Light Machine Gun","Automatic Rifle"],
+	"uniques": ["[1] additional attacks per turn"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Ranged Gunpowder","Scout","Siege","Melee Water","Ranged Water","Fighter","Bomber"]
+	},
+	{
+	"name": "Scouting I",
+	"prerequisites": ["Scouting Experise","Submersible"],
+	"uniques": ["[+1] Sight"],
+	"unitTypes": ["Scout","Sword","Mounted","Submarine"],
+        "column": 8,
+        "row": 1
+	},
+	{
+	"name": "Scouting II",
+	"prerequisites": ["Scouting I"],
+	"uniques": ["[+1] Sight"],
+	"unitTypes": ["Scout","Sword","Mounted","Submarine"],
+        "column": 8,
+        "row": 2
+	},
+	{
+	"name": "Scouting III",
+	"prerequisites": ["Scouting II"],
+	"uniques": ["[+1] Movement"],
+	"unitTypes": ["Scout","Sword","Mounted","Submarine"],
+        "column": 8,
+        "row": 3
+	},
+	{
+	"name": "Survivalism I",
+	"prerequisites": ["Scouting Expertise","Submersible"],
+	"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "[+25]% Strength <when defending>"],
+	"unitTypes": ["Scout","Sword","Mounted","Submarine"],
+        "column": 9,
+        "row": 1
+	},
+	{
+	"name": "Survivalism II",
+	"prerequisites": ["Survivalism I"],
+	"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "[+25]% Strength <when defending>"],
+	"unitTypes": ["Scout","Sword","Mounted","Submarine"],
+        "column": 9,
+        "row": 2
+	},
+	{
+	"name": "Survivalism III",
+	"prerequisites": ["Survivalism II"],
+	"uniques": ["Unit will heal every turn, even if it performs an action", "Withdraws before melee combat <with [75]% chance>"], // This number is not based on any source
+	"unitTypes": ["Scout","Sword","Mounted","Submarine"],
+        "column": 9,
+        "row": 3
+	},
+	{
+	"name": "Charge",
+	"prerequisites": ["Mace","Axe","Ram","Chariot","Horse","elephant"],
+	"uniques": ["[+33]% Strength <vs [Wounded] units>"],
+	"unitTypes": ["Mounted","Armored","Sword","Melee Water","Ranged Water"],
+        "column": 6,
+        "row": 2
+	},
+	{
+	"name": "Flanking",
+	"prerequisites": ["Sabre"],
+	"uniques": ["[+10]% to Flank Attack bonuses"],
+	"unitTypes": ["Mounted","Armored","Sword","Melee Water","Ranged Water"],
+        "column": 6,
+        "row": 2
+	},
+	{
+	"name": "Shock I",
+	"prerequisites": ["Mace","Sword","Axe","Sling","Javelin","Chariot","Horse","Spear","Pike","Sabre","Rocket","Musket","Pistol","Automatic Rifle"],
+	"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Ranged Gunpowder"],
+        "column": 4,
+        "row": 1
+	},
+	{
+	"name": "Shock II",
+	"prerequisites": ["Shock I"],
+	"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Ranged Gunpowder"],
+        "column": 4,
+        "row": 2
+	},
+	{
+	"name": "Shock III",
+	"prerequisites": ["Shock II"],
+	"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Ranged Gunpowder"],
+        "column": 4,
+        "row": 3
+	},
+	{
+	"name": "Drill I",
+	"prerequisites": ["Sword","Axe","Javelin","Spear","Sabre","Crossbow","Rifle","Light Machine Gun","Automatic Rifle"],
+	"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Ranged Gunpowder","Fighter","Bomber"],
+        "column": 5,
+        "row": 1
+	},
+	{
+	"name": "Drill II",
+	"prerequisites": ["Drill I"],
+	"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Ranged Gunpowder","Fighter","Bomber"],
+        "column": 5,
+        "row": 2
+	},
+	{
+	"name": "Drill III",
+	"prerequisites": ["Drill II"],
+	"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Ranged Gunpowder","Fighter","Bomber"],
+        "column": 5,
+        "row": 3
+	},
+	{
+	"name": "Accuracy I",
+	"prerequisites": ["Bow","Sling","Javelin","Catapult","Ballista","Crossbow","Musket","Cannon","Rifle","Pistol","Modern Cannon","Light Machine Gun","Automatic Rifle"],
+	"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+	"unitTypes": ["Siege","Archery","Ranged Gunpowder","Gunpowder","Sword","Mounted","Armored","Fighter","Bomber"],
+        "column": 1,
+        "row": 1
+    },
+	{
+	"name": "Accuracy II",
+	"prerequisites": ["Accuracy I"],
+	"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+	"unitTypes": ["Siege","Archery","Ranged Gunpowder","Gunpowder","Sword","Mounted","Armored","Fighter","Bomber"],
+        "column": 1,
+        "row": 2
+    },
+	{
+	"name": "Accuracy III",
+	"prerequisites": ["Accuracy II"],
+	"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
+	"unitTypes": ["Siege","Archery","Ranged Gunpowder","Gunpowder","Sword","Mounted","Armored","Fighter","Bomber"],
+        "column": 1,
+        "row": 3
+    },
+
+	{
+	"name": "Barrage I",
+	"prerequisites": ["Bow","Sling","Catapult","Ship Cannon","crossbow","Rocket","Heavy Machine Gun","Modern Cannon"],
+	"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+	"unitTypes": ["Siege","Archery","Ranged Gunpowder","Gunpowder","Sword","Mounted","Armored","Melee Water","Ranged Water","Fighter","Bomber"],
+        "column": 2,
+        "row": 1
+	},
+	{
+	"name": "Barrage II",
+	"prerequisites": ["Barrage I"],
+	"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+	"unitTypes": ["Siege","Archery","Ranged Gunpowder","Gunpowder","Sword","Mounted","Armored",,"Melee Water","Ranged Water","Fighter","Bomber"],
+        "column": 2,
+        "row": 2
+	},
+	{
+	"name": "Barrage III",
+	"prerequisites": ["Barrage II"],
+	"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
+	"unitTypes": ["Siege","Archery","Ranged Gunpowder","Gunpowder","Sword","Mounted","Armored","Melee Water","Ranged Water","Fighter","Bomber"],
+        "column": 2,
+        "row": 3
+	},
+	{
+	"name": "Armor Plating I",
+	"prerequisites": ["Ram","Heavy Armor","Submersible"],
+	"uniques": ["[+25]% Strength <when defending>"],
+	"unitTypes": ["Aircraft Carrier","Sword","Mounted","Armored","Melee Water","Archery","Gunpowder","Submarine"],
+        "column": 15,
+        "row": 1
+	},
+	{
+	"name": "Armor Plating II",
+	"prerequisites": ["Armor Plating I"],
+	"uniques": ["[+25]% Strength <when defending>"],
+	"unitTypes": ["Aircraft Carrier","Sword","Mounted","Armored","Melee Water","Archery","Gunpowder","Submarine"],
+        "column": 15,
+        "row": 2
+	},
+	{
+	"name": "Armor Plating III",
+	"prerequisites": ["Armor Plating II"],
+	"uniques": ["[+25]% Strength <when defending>"],
+	"unitTypes": ["Aircraft Carrier","Sword","Mounted","Armored","Melee Water","Archery","Gunpowder","Submarine"],
+        "column": 15,
+        "row": 3
+	},
+	{
+	"name": "Boarding Party I",
+	"prerequisites": ["Ram"],
+	"uniques": ["[+15]% Strength <vs [Water] units>"],
+	"unitTypes": ["Melee Water","Ranged Water"],
+        "column": 11,
+        "row": 1
+	},
+	{
+	"name": "Boarding Party II",
+	"prerequisites": ["Boarding Party I"],
+	"uniques": ["[+15]% Strength <vs [Water] units>"],
+	"unitTypes": ["Melee Water","Ranged Water"],
+        "column": 11,
+        "row": 2
+	},
+	{
+	"name": "Boarding Party III",
+	"prerequisites": ["Boarding Party II"],
+	"uniques": ["[+15]% Strength <vs [Water] units>"],
+	"unitTypes": ["Melee Water","Ranged Water"],
+        "column": 11,
+        "row": 3
+	},
+		{
+	"name": "Coastal Raider I",
+	"prerequisites": ["Ram"],
+	"uniques": ["[+20]% Strength <vs cities>", "Earn [33]% of the damage done to [City] units as [Gold]"],
+	"unitTypes": ["Melee Water","Ranged Water"],
+        "column": 12,
+        "row": 1
+	},
+	{
+	"name": "Coastal Raider II",
+	"prerequisites": ["Coastal Raider I"],
+	"uniques": ["[+20]% Strength <vs cities>", "Earn [33]% of the damage done to [City] units as [Gold]"],
+	"unitTypes": ["Melee Water","Ranged Water"],
+        "column": 12,
+        "row": 2
+	},
+	{
+	"name": "Coastal Raider III",
+	"prerequisites": ["Coastal Raider II"],
+	"uniques": ["[+20]% Strength <vs cities>", "Earn [33]% of the damage done to [City] units as [Gold]"],
+	"unitTypes": ["Melee Water","Ranged Water"],
+        "column": 12,
+        "row": 3
+	},
+	{
+	"name": "Landing Party",
+	"prerequisites": ["Ram"],
+	"uniques": ["Eliminates combat penalty for attacking across a coast"],
+	"unitTypes": ["Melee Water"],
+        "column": 12,
+        "row": 5
+	},
+	{
+	"name": "Cover I",
+	"prerequisites": ["Chariot","Shield","Ballista","Modern Cannon"],
+	"uniques": ["[+33]% Strength <vs [Ranged] units> <when defending>"],
+	"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege","Mounted","Armored","Melee Water"],
+        "column": 24,
+        "row": 1
+	},
+	{
+	"name": "Cover II",
+	"prerequisites": ["Cover I"],
+	"uniques": ["[+33]% Strength <vs [Ranged] units> <when defending>"],
+	"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Siege","Mounted","Armored","Melee Water"],
+        "column": 24,
+        "row": 2
+	},
+	{
+	"name": "Targeting I",
+	"prerequisites": ["Ship Ballista","Ballista","Ship Cannon","Rocket","Cannon","Heavy Machine Gun","Rifle","Modern Cannon","Submersible"],
+	"uniques": ["[+15]% Strength <vs [Water] units>"],
+	"unitTypes": ["Ranged Water","Siege","Ranged Gunpowder","Gunpowder","Submarine","Fighter","Bomber"],
+        "column": 13,
+        "row": 1
+	},
+	{
+	"name": "Targeting II",
+	"prerequisites": ["Targeting I"],
+	"uniques": ["[+15]% Strength <vs [Water] units>"],
+	"unitTypes": ["Ranged Water","Siege","Ranged Gunpowder","Gunpowder","Submarine","Fighter","Bomber"],
+        "column": 13,
+        "row": 2
+	},
+	{
+	"name": "Targeting III",
+	"prerequisites": ["Targeting II"],
+	"uniques": ["[+15]% Strength <vs [Water] units>"],
+	"unitTypes": ["Ranged Water","Siege","Ranged Gunpowder","Gunpowder","Submarine","Fighter","Bomber"],
+        "column": 13,
+        "row": 3
+	},
+	{
+	"name": "Amphibious",
+	"prerequisites": ["Sword","Javelin","Sling","Axe","mace","Dagger","Crossbow","Rifle","Autmatic Rifle"],
+	"uniques": ["Eliminates combat penalty for attacking over a river", "Eliminates combat penalty for attacking across a coast"],
+	"unitTypes": ["Sword","Gunpowder","Archery","Ranged Gunpowder","Mounted","Armored","Siege"],
+        "column": 6,
+        "row": 1
+	},
+	{
+	"name": "Medic",
+	"prerequisites": ["spear","Pike","Javelin","Sling","Sword","Dagger","Horse","Chariot","Ship Cannon","Crossbow","Rifle","Autmatic Rifle"],
+	"uniques": ["All adjacent units heal [+5] HP when healing"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Armored","Ranged Gunpowder","Archery","Melee Water","Ranged Water"],
+        "column": 10, // after scout base
+        "row": 1
+	},
+	{
+	"name": "Medic II",
+	"prerequisites": ["Medic"],
+	"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "All adjacent units heal [+5] HP when healing"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Armored","Ranged Gunpowder","Archery","Melee Water","Ranged Water"],
+        "column": 10,
+        "row": 2
+	},
+	{
+	"name": "Bombardment I",
+	"prerequisites": ["Ship Cannon","Submersible","Airplane"],
+	"uniques": ["[+33]% Strength <vs [Land] units>"],
+	"unitTypes": ["Ranged Water","Fighter","Bomber","Submarine"],
+        "column": 26,
+        "row": 1
+	},
+	{
+	"name": "Bombardment II",
+	"prerequisites": ["Bombardment I"],
+	"uniques": ["[+33]% Strength <vs [Land] units>"],
+	"unitTypes": ["Ranged Water","Fighter","Bomber","Submarine"],
+        "column": 26,
+        "row": 2
+	},
+	{
+	"name": "Bombardment III",
+	"prerequisites": ["Bombardment II"],
+	"uniques": ["[+34]% Strength <vs [Land] units>"],
+	"unitTypes": ["Ranged Water","Fighter","Bomber","Submarine"],
+        "column": 26,
+        "row": 3
+	},
+	{
+	"name": "Interception I",
+	"uniques": ["[+33]% Damage when intercepting"],
+	"unitTypes": ["Fighter"],
+        "column": 18,
+        "row": 1
+	},
+	{
+	"name": "Interception II",
+	"prerequisites": ["Interception I"],
+	"uniques": ["[+33]% Damage when intercepting"],
+	"unitTypes": ["Fighter"],
+        "column": 18,
+        "row": 2
+	},
+	{
+	"name": "Interception III",
+	"prerequisites": ["Interception II"],
+	"uniques": ["[+34]% Damage when intercepting"],
+	"unitTypes": ["Fighter"],
+        "column": 18,
+        "row": 3
+	},
+	{
+	"name": "Dogfighting I",
+	"uniques": ["[+33]% Strength when performing Air Sweep"],
+	"unitTypes": ["Fighter"],
+        "column": 19,
+        "row": 1
+	},
+	{
+	"name": "Dogfighting II",
+	"prerequisites": ["Dogfighting I"],
+	"uniques": ["[+33]% Strength when performing Air Sweep"],
+	"unitTypes": ["Fighter"],
+        "column": 19,
+        "row": 2
+	},
+	{
+	"name": "Dogfighting III",
+	"prerequisites": ["Dogfighting II"],
+	"uniques": ["[+34]% Strength when performing Air Sweep"],
+	"unitTypes": ["Fighter"],
+        "column": 19,
+        "row": 3
+	},
+	{
+	"name": "Extended Range",
+	"prerequisites": ["Accuracy III","Barrage III","Targeting III","Bombardment III", "Wolfpack III"],
+	"uniques": ["[+1] Range"],
+	"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Submarine","Mounted","Sword","Gunpowder","Armored","Melee Water","Scout"],
+        "column": 3,
+        "row": 3
+	},
+	{
+	"name": "Indirect Fire",
+	"prerequisites": ["Javelin","catapult","Modern Cannon"],
+	"uniques": ["Ranged attacks may be performed over obstacles"],
+	"unitTypes": ["Archery","Ranged Gunpowder","Siege","Ranged Water","Melee Water","Mounted","Sword","Armored","Gunpowder","scout"],
+        "column": 3,
+        "row": 4
+	},
+	{
+	"name": "Blitz",
+	"prerequisites": ["Shock III","Drill III","Fire By Rank III","Targeting III","Bombardment III"],
+	"uniques": ["[1] additional attacks per turn"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Ranged Gunpowder","Scout","Siege","Melee Water","Ranged Water","Fighter","Bomber"],
+        "column": 6,
+        "row": 4
+	},
+	{
+	"name": "Woodsman",
+	"prerequisites": ["Drill III","Survivalism III"],
+	"uniques": ["Double movement in [Forest]","Double movement in [Jungle]"],
+	"unitTypes": ["Sword","Gunpowder","Mounted","Armored","Archery","Ranged Gunpowder","Scout"],
+        "column": 6,
+        "row": 5
+	},
+	{
+	"name" : "Supply",
+	"prerequisites": ["Bombardment III", "Targeting III", "Boarding Party III", "Coastal Raider III"],
+	"uniques": ["May heal outside of friendly territory", "[+15] HP when healing <in [Foreign Land] tiles>"],
+	"unitTypes": ["Melee Water", "Ranged Water"],
+        "column": 16,
+        "row": 4
+	},
+	{
+	"name": "Evasion",
+	"prerequisites": ["Airplane"],
+	"uniques": ["Damage taken from interception reduced by [50]%"],
+	"unitTypes": ["Bomber","Fighter"],
+        "column": 17,
+        "row": 4
+	},
+	{
+	"name": "Sortie",
+	"prerequisites": ["Interception II", "Dogfighting II"],
+	"uniques": ["[1] extra interceptions may be made per turn"],
+	"unitTypes": ["Fighter"],
+        "column": 21,
+        "row": 2
+	},
+
+	{
+	"name": "Operational Range",
+	"prerequisites": ["Interception II", "Dogfighting II", "Targeting II", "Bombardment II"],
+	"uniques": ["[+2] Range"],
+	"unitTypes": ["Fighter","Bomber"],
+        "column": 21,
+        "row": 1
+	},
+	{
+	"name": "Air Repair",
+	"prerequisites": ["Interception III", "Dogfighting III", "Targeting III", "Bombardment III", "Mobility II", "Anti-Armor II"],
+	"uniques": ["Unit will heal every turn, even if it performs an action"],
+	"unitTypes": ["Fighter", "Bomber", "Helicopter"],
+        "column": 21,
+        "row": 3
+	},
+	{
+	"name": "Mobility I",
+	"uniques": ["[+1] Movement"],
+	"unitTypes": ["Helicopter"],
+        "column": 22,
+        "row": 1
+	},
+	{
+	"name": "Mobility II",
+	"prerequisites": ["Mobility I"],
+	"uniques": ["[+1] Movement"],
+	"unitTypes": ["Helicopter"],
+        "column": 22,
+        "row": 2
+	},
+	{
+	"name": "Anti-Armor I",
+	"uniques": ["[+25]% Strength <vs [Armored] units>"],
+	"unitTypes": ["Helicopter","Gunpowder","Ranged Gunpowder","Armored","Siege","Fighter","Bomber","Melee Water","Ranged Water"],
+        "column": 23,
+        "row": 1
+	},
+	{
+	"name": "Anti-Armor II",
+	"prerequisites": ["Anti-Armor I"],
+	"uniques": ["[+25]% Strength <vs [Armored] units>"],
+	"unitTypes": ["Helicopter","Gunpowder","Ranged Gunpowder","Armored","Siege","Fighter","Bomber","Melee Water","Ranged Water"],
+        "column": 23,
+        "row": 2
 	},
 ]
