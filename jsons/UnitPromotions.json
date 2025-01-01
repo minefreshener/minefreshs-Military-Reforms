@@ -716,5 +716,5 @@
 	"unitTypes": ["Helicopter","Gunpowder","Ranged Gunpowder","Armored","Siege","Fighter","Bomber","Melee Water","Ranged Water"],
         "column": 23,
         "row": 2
-	},
+	}
 ]
